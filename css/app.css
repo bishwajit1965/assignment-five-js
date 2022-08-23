@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header-text {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.item {
+  gap: 50px;
+}
+.item-two h1 {
+  font-family: Lobster, sans-serif;
+  color: #ff5e19;
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+.header-area {
+  /* background-image: url("../images/background-img.jpg"); */
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-height {
+  height: 200px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fab {
+  font-size: 1.5rem;
+}
+.disabled {
+  background: #ccc;
+}

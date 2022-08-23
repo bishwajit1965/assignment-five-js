@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiring football players</title>
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1b551efcfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <!-- Nav bar begins -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav bar ends -->
+    <!-- Header area begins -->
+    <div class="container-fluid header bg-dark">
+      <div class="row header-area text-center text-white p-4 h-100">
+        <div class="header-text">
+          <div class="item item-one">
+            <img src="" alt="" />
+          </div>
+          <div class="item item-two">
+            <h1>Football Match Plyer Selection</h1>
+            <p>
+              You are invited to enjoy the play on every Sunday afternoon.
+              Promise you will definitely enjoy the exciting matches.
+            </p>
+          </div>
+          <div class="item item-three"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Header area ends -->
+    <div class="container">
+      <div class="row mt-5">
+        <!-- Middle-content area begins -->
+        <div class="col-sm-9 mb-5">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Kylian-Mbappe.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="player-one">Kylian Mbappe</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this) ;this.disabled = true"
+                      id="button-one"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Cristiano-Ronaldo.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cristiano Ronaldo</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      id="button-two"
+                      onclick="addToPlayerList(this) ;this.disabled = true"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Renato-Sanches.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Renato Sanches</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this) ;this.disabled = true"
+                      id="button-three"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Jay-Jay-Okocha.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jay Jay Okocha</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this);this.disabled = true"
+                      id="button-four"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/John-Cruyff.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">John Cruyff</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this);this.disabled = true"
+                      id="button-five"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Lionel-Messi-Argentina.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lionel Messi</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this);this.disabled = true"
+                      id="button-six"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Luis-Squarez.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Luis Squarez</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this)"
+                      id="button-seven"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Naymer-Jr.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Naymer Jr</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this)"
+                      id="button-eight"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="images/Ronaldinho.jpg"
+                  class="card-img-top image-height"
+                  alt="Football player image"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ronaldinho</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <div class="d-grid">
+                    <button
+                      onclick="addToPlayerList(this); this.disabled = true"
+                      id="button-nine"
+                      type="submit"
+                      class="btn btn-sm btn-primary btn-block enabled"
+                    >
+                      SELECT PLAYER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Middle-content area ends -->
+
+        <!-- right calculation area begins -->
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card bg-dark text-white">
+                <div class="card-header border-light">
+                  <h4 class="card-title">Selected five players</h4>
+                </div>
+                <div class="card-body mb-2">
+                  <div class="players-list">
+                    <ol id="players"></ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col-sm-12">
+              <div class="card bg-dark text-white">
+                <div class="card-header border-light">
+                  <h4 class="card-title">Budget</h4>
+                </div>
+
+                <div class="card-body">
+                  <!-- Per player begins -->
+                  <div class="row g-1 align-items-center mb-4">
+                    <div class="col-sm-5">
+                      <div class="col-auto">
+                        <label for="perPlayer" class="">Per player</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-7 mb-2">
+                      <div class="col-auto">
+                        <input
+                          type="text"
+                          id="per-player-cost"
+                          class="form-control form-control-sm"
+                          placeholder="Per
+                        player cost..."
+                          value="5000"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      id="player-expense"
+                      class="btn btn-sm btn-primary"
+                    >
+                      Calculate
+                    </button>
+                  </div>
+                  <!-- Per player ends -->
+                  <!-- Player expenses begins -->
+                  <div class="player-expenses mt-5">
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <h6>Players Expense</h6>
+                      </div>
+                      <div class="col-sm-5">
+                        <h6>$<span id="players-expenses">5000</span></h6>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-5"><h6>Manager</h6></div>
+                      <div class="col-sm-7">
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            id="manager-salary"
+                            class="form-control form-control-sm"
+                            placeholder="Manager cost..."
+                            value="7000"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-5"><h6>Coach</h6></div>
+                      <div class="col-sm-7">
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            id="coach-salary"
+                            class="form-control form-control-sm"
+                            placeholder="Coach cost..."
+                            value="9000"
+                          />
+                        </div>
+                      </div>
+                      <div class="d-grid">
+                        <button
+                          type="submit"
+                          id="calculate-grand-total"
+                          href="#"
+                          class="btn btn-sm btn-primary d-block"
+                        >
+                          Calculate Total
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-12">
+                        <h5>
+                          Grand Total $<span id="grand-total-of-all-costs"
+                            >10000</span
+                          >
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Player expenses ends -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right calculation area ends -->
+      </div>
+    </div>
+
+    <!-- Footer area begins -->
+    <div class="container-fluid footer">
+      <div class="row text-center bg-dark text-white p-3">
+        <span class="mb-3">&copy; 2022 All are copyright protected. </span>
+        <hr />
+      </div>
+
+      <div class="row bg-dark py-">
+        <div class="col-sm-4 offset-sm-4 text-light">
+          <div class="social-media-icons pb-4">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-github"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer area ends -->
+
+    <!-- Js file link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/utility.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
